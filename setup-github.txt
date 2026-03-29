@@ -1,0 +1,25 @@
+# COMANDOS PARA CONFIGURAR GIT Y GITHUB
+
+# 1. Configurar Git (primera vez)
+git config --global user.name "Tu Nombre"
+git config --global user.email "tu-email@example.com"
+
+# 2. Navegar a la carpeta del proyecto
+cd "c:/Users/rodri/OneDrive/Imágenes/fotografías/LA PERVERSA/web perversa"
+
+# 3. Inicializar repositorio Git
+git init
+
+# 4. Añadir todos los archivos
+git add .
+
+# 5. Hacer el primer commit
+git commit -m "Initial commit - La Perversa Web"
+
+# 6. Conectar con GitHub (reemplaza TU_USUARIO)
+git remote add origin https://github.com/TU_USUARIO/la-perversa-web.git
+
+# 7. Subir a GitHub
+git push -u origin main
+
+# NOTA: Reemplaza TU_USUARIO con tu nombre de usuario de GitHub

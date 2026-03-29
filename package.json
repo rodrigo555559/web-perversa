@@ -1,0 +1,13 @@
+{
+  "name": "la-perversa-web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd supabase && npm run build",
+    "dev": "cd supabase && npm run dev",
+    "preview": "cd supabase && npm run preview"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

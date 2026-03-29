@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "buildCommand": "cd supabase && npm install && npm run build",
+  "outputDirectory": "supabase/dist",
+  "installCommand": "cd supabase && npm install",
+  "framework": "vite",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
