@@ -5,10 +5,12 @@ import MenuItem from "@/components/MenuItem";
 import LeopardDivider from "@/components/LeopardDivider";
 import VideoSection from "@/components/VideoSection";
 import Footer from "@/components/Footer";
+import CartButton from "@/components/CartButton";
 import sidesPhoto from "@/assets/sides-photo.jpg";
 import dessertPhoto from "@/assets/dessert-photo.jpg";
 import basilicaBurger from "@/assets/basilica-burger.png";
 import porquinaBurger from "@/assets/porquina-burger.png";
+import laCabraBurger from "@/assets/la-cabra-burger.jpg";
 import burgerVideo from "@/assets/burger-video.mp4";
 
 const sections = [
@@ -70,18 +72,18 @@ const Index = () => {
       {/* SMASH BURGERS */}
       <MenuSection id="smash" title="Smash Burgers" subtitle="La nueva forma de disfrutar">
         <MenuItem
-          name="Mayo Chilli"
+          name="La Perversa"
           description="Doble cheeseburger de queso americano con salsa mayo sweet chilli y cebolla encurtida, bacon crispy."
           price="9,99€"
         />
         <MenuItem
-          name="Basílica"
+          name="Porkiña"
           description="Doble smash, tomate seco, mayo con albahaca, brotes, cebolla, queso emmental."
           price="9,99€"
           image={basilicaBurger}
         />
         <MenuItem
-          name="Porquiña"
+          name="porkiña"
           description="Doble de carne, salsa bacon ahumado y cheddar, cebolla caramelizada, tira de bacon, queso americano."
           price="9,99€"
           image={porquinaBurger}
@@ -145,11 +147,12 @@ const Index = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12">
           <div>
             <h3 className="font-display text-xl text-primary mb-4 font-semibold">Refrescos</h3>
-            <MenuItem name="Pepsi" description="" price="3,00€" />
+            <MenuItem name="Coca-Cola" description="" price="3,00€" />
             <MenuItem name="Sprite" description="" price="3,00€" />
             <MenuItem name="Aquarius Limón" description="" price="3,00€" />
             <MenuItem name="Aquarius Naranja" description="" price="3,00€" />
             <MenuItem name="Monster Mangoloco" description="" price="3,00€" />
+            <MenuItem name="Fuze Tea" description="" price="3,00€" />
           </div>
           <div>
             <h3 className="font-display text-xl text-primary mb-4 font-semibold">Cervezas</h3>
@@ -186,6 +189,8 @@ const Index = () => {
       <LeopardDivider />
 
       <Footer />
+      
+      <CartButton />
     </div>
   );
 };
