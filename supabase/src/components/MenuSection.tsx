@@ -42,7 +42,24 @@ const MenuSection = ({ id, title, subtitle, children, image, imageAlt, reverse, 
         ) : (
           <>
             <div className="mb-8 sm:mb-10 text-center">
-              <h2 className="section-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl">{title}</h2>
+              <h2 className="section-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl relative">
+                {id === 'hamburguesas' ? (
+                  <span className="relative inline-block">
+                    Hamburguesas
+                    <img src={siluetaImage} alt="" className="absolute w-8 h-8 opacity-30 -top-2 left-1/2 transform -translate-x-1/2" style={{transform: 'translateX(-50%)'}} />
+                  </span>
+                ) : id === 'smash' ? (
+                  <span className="relative inline-block">
+                    Smash Burge
+                    <span className="relative inline-block">
+                      rs
+                      <img src={siluetaImage} alt="" className="absolute w-8 h-8 opacity-30 -top-2 left-0" />
+                    </span>
+                  </span>
+                ) : (
+                  title
+                )}
+              </h2>
               {subtitle && (
                 <p className="text-muted-foreground font-body text-xs sm:text-sm mt-3 tracking-wide uppercase">
                   {subtitle}

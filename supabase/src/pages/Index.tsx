@@ -54,6 +54,7 @@ const Index = () => {
         id="hamburguesas"
         title="Hamburguesas"
         subtitle="Panes: Brioche y rústica (+0,50€)"
+        siluetaImage={siluetaImage}
       >
         <MenuItem
           name="La Cabra"
@@ -105,6 +106,7 @@ const Index = () => {
         id="smash"
         title="Smash Burgers"
         subtitle="DICE EL COCINERO QUE SI ERES GUAPA QUE LE HABLES"
+        siluetaImage={siluetaImage}
       >
         <MenuItem
           name="La Perversa"
