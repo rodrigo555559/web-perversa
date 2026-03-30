@@ -13,7 +13,8 @@ import laCabraBurger from "@/assets/la-cabra-burger.jpg";
 import burgerVideo from "@/assets/burger-video.mp4";
 import cocaCola from "@/assets/coca-cola.png";
 import sprite from "@/assets/sprite.png";
-import aquariusNaranja from "@/assets/acuarius-naranja.png";
+import aquariusNaranja from "@/assets/aquarius-naranja.png";
+import aquariusLimon from "@/assets/aquarius.png";
 import mangoLoco from "@/assets/mango-loco.png";
 import fuzeTea from "@/assets/fuze-tea.jpg";
 import estrellaGalicia from "@/assets/estrella-galicia.png";
@@ -144,8 +145,9 @@ const Index = () => {
       <MenuSection
         id="extras"
         title="Para Picar"
-        subtitle="Complementa tu experiencia"
+        subtitle="Para quien piense que las hamburguesas no son suficientes (te entendemos)"
       >
+        <p className="text-muted-foreground font-body text-xs sm:text-sm mb-4 tracking-wide uppercase text-center">No hagas tratos con alguien que no pide patatas</p>
         <div className="h-full"><MenuItem name="Patatas Normales" description="Crujientes y doradas." price="2,70€" image={patatasImage} imageSize="large" /></div>
         <div className="h-full"><MenuItem name="Patatas Bacon Cheddar" description="Con bacon crispy y salsa cheddar." price="4,00€" image={cheddarbaconImage} imageSize="large" /></div>
         <div className="h-full"><MenuItem name="Patatas Gajo" description="Corte rústico, perfectamente especiadas." price="3,00€" image={gajoImage} imageSize="extra-large" /></div>
@@ -186,9 +188,9 @@ const Index = () => {
           <h3 className="font-display text-2xl text-primary mb-6 font-semibold text-center">Refrescos</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
             <div className="h-full"><MenuItem name="Coca-Cola" description="" price="3,00€" image={cocaCola} imageSize="large" /></div>
-            <div className="h-full"><MenuItem name="Sprite" description="" price="3,00€" image={sprite} imageSize="medium" /></div>
-            <div className="h-full"><MenuItem name="Aquarius Limón" description="" price="3,00€" /></div>
-            <div className="h-full"><MenuItem name="Aquarius Naranja" description="" price="3,00€" image={aquariusNaranja} imageSize="medium" /></div>
+            <div className="h-full"><MenuItem name="Sprite" description="" price="3,00€" image={sprite} imageSize="large" /></div>
+            <div className="h-full"><MenuItem name="Aquarius Limón" description="" price="3,00€" image={aquariusLimon} imageSize="large" /></div>
+            <div className="h-full"><MenuItem name="Aquarius Naranja" description="" price="3,00€" image={aquariusNaranja} imageSize="large" /></div>
             <div className="h-full"><MenuItem name="Monster Mangoloco" description="" price="3,00€" image={mangoLoco} imageSize="large" /></div>
             <div className="h-full"><MenuItem name="Fuze Tea" description="" price="3,00€" image={fuzeTea} imageSize="large" /></div>
           </div>
@@ -202,6 +204,7 @@ const Index = () => {
             <div className="h-full"><MenuItem name="1906" description="" price="3,50€" image={milnueve} imageSize="large" /></div>
           </div>
         </div>
+        <p className="text-muted-foreground font-body text-xs sm:text-sm mt-6 tracking-wide uppercase text-center">El 99% de nuestros clientes afirma que sin bebida nuestra comida se les hace bola</p>
       </MenuSection>
 
       {/* SALSAS */}
