@@ -71,14 +71,6 @@ const MenuSection = ({ id, title, subtitle, children, image, imageAlt, reverse, 
                   <img src={logoSilhouette} alt="" className="absolute w-3 h-3 opacity-10 top-0 right-0" />
                 </p>
               )}
-              {id === 'hamburguesas' && (
-                <p className="text-muted-foreground font-body text-xs sm:text-sm mt-2 tracking-wide uppercase relative">
-                  NO SE POR QUÉ TANTA INSISTENCIA CON LO DE <span className="relative inline-block">
-                      B
-                      <img src={siluetaImage} alt="" className="absolute w-4 h-4 opacity-25 -top-3 left-1" style={{transform: 'rotate(-10deg)'}} />
-                    </span> URGERS DE AUTOR
-                </p>
-              )}
               {id === 'postres' && (
                 <p className="text-muted-foreground font-body text-xs sm:text-sm mt-2 tracking-wide uppercase relative">
                   SI LUCAS DICE QUE LAS SUYAS SON CASERAS LAS NUESTRAS TAMBIÉN QUE NOS LAS VENDE EL MISMO
