@@ -3,36 +3,45 @@ interface MenuItemProps {
   description: string;
   price: string;
   image?: string;
+  imageSize?: 'small' | 'medium' | 'large';
 }
 
-const MenuItem = ({ name, description, price, image }: MenuItemProps) => {
+const MenuItem = ({ name, description, price, image, imageSize = 'medium' }: MenuItemProps) => {
   const handleAddToCart = () => {
     // Aquí puedes añadir lógica de carrito
     alert(`Añadido al carrito: ${name} - ${price}`);
   };
 
   return (
-    <div className="group py-6 border-b border-border/50 last:border-b-0">
-      <div className="flex items-start justify-between gap-4">
+    <div className="group py-6 border-b border-border/50 last:border-b-0 h-full flex flex-col">
+      <div className="flex flex-col items-center gap-3 flex-1 min-h-[320px]">
         {image && (
-          <img
-            src={image}
-            alt={name}
-            className="w-20 h-20 md:w-24 md:h-24 rounded-sm object-cover flex-shrink-0"
-            loading="lazy"
-          />
+          <div className="flex-shrink-0">
+            <img
+              src={image}
+              alt={name}
+              className={`
+                ${imageSize === 'small' ? 'w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28' : 
+                  imageSize === 'large' ? 'w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56' :
+                  'w-32 h-32 sm:w-32 sm:h-32 md:w-40 md:h-40'
+                } 
+                rounded-lg object-cover shadow-md
+              `}
+              loading="lazy"
+            />
+          </div>
         )}
-        <div className="flex-1">
-          <h3 className="menu-item-name group-hover:text-primary transition-colors duration-300">
+        <div className="flex-1 flex flex-col justify-center items-center text-center min-h-[80px]">
+          <h3 className="menu-item-name group-hover:text-primary transition-colors duration-300 text-base sm:text-base leading-tight min-h-[24px] flex items-center">
             {name}
           </h3>
-          <p className="menu-item-desc mt-1">{description}</p>
+          <p className="menu-item-desc mt-1 text-xs sm:text-sm leading-tight min-h-[36px] flex items-center">{description}</p>
         </div>
-        <div className="flex flex-col items-end gap-2">
-          <span className="menu-item-price whitespace-nowrap">{price}</span>
+        <div className="flex flex-col items-center gap-2 w-full flex-shrink-0">
+          <span className="menu-item-price whitespace-nowrap text-base sm:text-base font-semibold">{price}</span>
           <button
             onClick={handleAddToCart}
-            className="text-xs bg-primary text-primary-foreground px-3 py-1 rounded-sm hover:opacity-90 transition-opacity"
+            className="text-xs sm:text-xs bg-primary text-primary-foreground px-3 py-2 sm:px-3 sm:py-1 rounded-md hover:opacity-90 transition-opacity w-full max-w-[120px]"
             data-element-type="menu-item"
             data-item-name={name}
             data-item-price={price}

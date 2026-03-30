@@ -63,6 +63,10 @@
     background-position: center;
     background-attachment: fixed;
     background-repeat: repeat;
+    /* Better mobile scrolling */
+    -webkit-overflow-scrolling: touch;
+    /* Prevent zoom on input focus */
+    -webkit-text-size-adjust: 100%;
   }
 
   body::before {
@@ -99,32 +103,32 @@
   }
 
   .section-title {
-    @apply text-4xl md:text-5xl font-bold tracking-tight;
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight;
     font-family: 'Playfair Display', serif;
     color: hsl(var(--primary));
   }
 
   .menu-item-name {
-    @apply text-lg md:text-xl font-semibold tracking-wide;
+    @apply text-base sm:text-lg md:text-xl font-semibold tracking-wide;
     font-family: 'Playfair Display', serif;
     color: hsl(var(--foreground));
   }
 
   .menu-item-desc {
-    @apply text-sm leading-relaxed;
+    @apply text-xs sm:text-sm leading-relaxed;
     color: hsl(var(--muted-foreground));
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
   }
 
   .menu-item-price {
-    @apply text-lg font-bold;
+    @apply text-base sm:text-lg font-bold;
     color: hsl(var(--primary));
     font-family: 'Montserrat', sans-serif;
   }
 
   .nav-link {
-    @apply text-xs uppercase tracking-[0.2em] font-medium transition-colors duration-300;
+    @apply text-xs sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] font-medium transition-colors duration-300;
     color: hsl(var(--muted-foreground));
     font-family: 'Montserrat', sans-serif;
   }

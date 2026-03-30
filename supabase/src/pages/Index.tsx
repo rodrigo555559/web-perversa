@@ -6,12 +6,28 @@ import LeopardDivider from "@/components/LeopardDivider";
 import VideoSection from "@/components/VideoSection";
 import Footer from "@/components/Footer";
 import CartButton from "@/components/CartButton";
-import sidesPhoto from "@/assets/sides-photo.jpg";
+import sidesPhoto from "@/assets/dessert-photo.jpg";
 import dessertPhoto from "@/assets/dessert-photo.jpg";
 import basilicaBurger from "@/assets/basilica-burger.png";
 import porquinaBurger from "@/assets/porquina-burger.png";
 import laCabraBurger from "@/assets/la-cabra-burger.jpg";
 import burgerVideo from "@/assets/burger-video.mp4";
+import cocaCola from "@/assets/coca-cola.png";
+import sprite from "@/assets/sprite.png";
+import aquariusNaranja from "@/assets/acuarius-naranja.png";
+import mangoLoco from "@/assets/mango-loco.png";
+import fuzeTea from "@/assets/fuze-tea.jpg";
+import estrellaGalicia from "@/assets/estrella-galicia.png";
+import milnueve from "@/assets/milnueve.png";
+import basilicaImage from "@/assets/basílica.jpeg";
+import patatasImage from "@/assets/patatas.png";
+import gajoImage from "@/assets/gajo.png";
+import gajoCheddarImage from "@/assets/gajo-cheddar.png";
+import baconCheddarImage from "@/assets/bacon-cheddar.png";
+import laPerversaImage from "@/assets/la-perversa.jpeg";
+import ayCarambaImage from "@/assets/ay-caramba.jpeg";
+import croquetasImage from "@/assets/croquetas.png";
+import cheddarbaconImage from "@/assets/cheddarbacon.png";
 
 const sections = [
   { id: "hamburguesas", label: "Hamburguesas" },
@@ -40,6 +56,8 @@ const Index = () => {
           name="La Cabra"
           description="Cebolla caramelizada, rulito de cabra, bacon crispy, rúcula y miel mostaza."
           price="9,90€"
+          image={laCabraBurger}
+          imageSize="large"
         />
         <MenuItem
           name="Heterobásica"
@@ -53,8 +71,10 @@ const Index = () => {
         />
         <MenuItem
           name="Ay Caramba"
-          description="Carne, queso cheddar, guacamole, pico de gallo, lechuga, salsa chipotle, jalapeños."
+          description="Carne, queso cheddar, guacamole, pico de Gallo, lechuga, salsa chipotle, jalapeños."
           price="9,99€"
+          image={ayCarambaImage}
+          imageSize="large"
         />
         <MenuItem
           name="Pollo Crujiente"
@@ -75,18 +95,22 @@ const Index = () => {
           name="La Perversa"
           description="Doble cheeseburger de queso americano con salsa mayo sweet chilli y cebolla encurtida, bacon crispy."
           price="9,99€"
+          image={laPerversaImage}
+          imageSize="large"
+        />
+        <MenuItem
+          name="Basílica"
+          description="Doble smash, tomate seco, mayo con albahaca, brotes, cebolla, queso emmental."
+          price="9,99€"
+          image={basilicaImage}
+          imageSize="large"
         />
         <MenuItem
           name="Porkiña"
-          description="Doble smash, tomate seco, mayo con albahaca, brotes, cebolla, queso emmental."
-          price="9,99€"
-          image={basilicaBurger}
-        />
-        <MenuItem
-          name="porkiña"
           description="Doble de carne, salsa bacon ahumado y cheddar, cebolla caramelizada, tira de bacon, queso americano."
           price="9,99€"
           image={porquinaBurger}
+          imageSize="large"
         />
       </MenuSection>
 
@@ -97,20 +121,11 @@ const Index = () => {
         id="extras"
         title="Para Picar"
         subtitle="Complementa tu experiencia"
-        image={sidesPhoto}
-        imageAlt="Patatas con bacon y cheddar"
       >
-        <MenuItem name="Patatas Normales" description="Crujientes y doradas." price="2,70€" />
-        <MenuItem name="Patatas Bacon Cheddar" description="Con bacon crispy y salsa cheddar." price="4,00€" />
-        <MenuItem name="Patatas Gajo" description="Corte rústico, perfectamente especiadas." price="3,00€" />
-        <MenuItem name="Patatas Gajo Bacon-Cheddar" description="Gajos con bacon y cheddar fundido." price="4,50€" />
-        <MenuItem
-          name="Nachos Loaded"
-          description="Con bacon crispy, guacamole, pico de gallo y cheddar."
-          price="5,00€"
-        />
-        <MenuItem name="Fingers de Pollo" description="Con miel mostaza o sweet chilli." price="7,00€" />
-        <MenuItem name="Croquetas de Jamón" description="8 unidades. Caseras y cremosas." price="7,00€" />
+        <div className="h-full"><MenuItem name="Patatas Normales" description="Crujientes y doradas." price="2,70€" image={patatasImage} imageSize="large" /></div>
+        <div className="h-full"><MenuItem name="Patatas Bacon Cheddar" description="Con bacon crispy y salsa cheddar." price="4,00€" image={cheddarbaconImage} imageSize="large" /></div>
+        <div className="h-full"><MenuItem name="Patatas Gajo" description="Corte rústico, perfectamente especiadas." price="3,00€" image={gajoImage} imageSize="large" /></div>
+        <div className="h-full"><MenuItem name="Croquetas de Jamón" description="8 unidades. Caseras y cremosas." price="7,00€" image={croquetasImage} imageSize="large" /></div>
         <MenuItem
           name="Croquetas Cecina y San Simón"
           description="8 unidades. Cecina y queso San Simón ahumado."
@@ -144,20 +159,25 @@ const Index = () => {
 
       {/* BEBIDAS */}
       <MenuSection id="bebidas" title="Bebidas">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12">
-          <div>
-            <h3 className="font-display text-xl text-primary mb-4 font-semibold">Refrescos</h3>
-            <MenuItem name="Coca-Cola" description="" price="3,00€" />
-            <MenuItem name="Sprite" description="" price="3,00€" />
-            <MenuItem name="Aquarius Limón" description="" price="3,00€" />
-            <MenuItem name="Aquarius Naranja" description="" price="3,00€" />
-            <MenuItem name="Monster Mangoloco" description="" price="3,00€" />
-            <MenuItem name="Fuze Tea" description="" price="3,00€" />
+        {/* Refrescos */}
+        <div className="mb-12">
+          <h3 className="font-display text-2xl text-primary mb-6 font-semibold text-center">Refrescos</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+            <div className="h-full"><MenuItem name="Coca-Cola" description="" price="3,00€" image={cocaCola} imageSize="large" /></div>
+            <div className="h-full"><MenuItem name="Sprite" description="" price="3,00€" image={sprite} imageSize="medium" /></div>
+            <div className="h-full"><MenuItem name="Aquarius Limón" description="" price="3,00€" /></div>
+            <div className="h-full"><MenuItem name="Aquarius Naranja" description="" price="3,00€" image={aquariusNaranja} imageSize="medium" /></div>
+            <div className="h-full"><MenuItem name="Monster Mangoloco" description="" price="3,00€" image={mangoLoco} imageSize="large" /></div>
+            <div className="h-full"><MenuItem name="Fuze Tea" description="" price="3,00€" image={fuzeTea} imageSize="large" /></div>
           </div>
-          <div>
-            <h3 className="font-display text-xl text-primary mb-4 font-semibold">Cervezas</h3>
-            <MenuItem name="Estrella" description="" price="3,50€" />
-            <MenuItem name="1906" description="" price="3,50€" />
+        </div>
+        
+        {/* Cervezas */}
+        <div>
+          <h3 className="font-display text-2xl text-primary mb-6 font-semibold text-center">Cervezas</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+            <div className="h-full"><MenuItem name="Estrella" description="" price="3,50€" image={estrellaGalicia} imageSize="large" /></div>
+            <div className="h-full"><MenuItem name="1906" description="" price="3,50€" image={milnueve} imageSize="large" /></div>
           </div>
         </div>
       </MenuSection>
@@ -167,7 +187,7 @@ const Index = () => {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="font-display text-3xl text-primary font-bold mb-6">Salsas +0,50€</h2>
           <div className="flex flex-wrap justify-center gap-3">
-            {["Ali oli", "BBQ", "Mayo", "Ketchup", "Sweet Chilli", "Miel Mostaza", "Salsa Cheddar", "Mayo Albahaca", "Mayo Cítrica"].map(
+            {["salsa garlic", "Mayo", "Ketchup", "Sweet Chilli", "Miel Mostaza", "Salsa Cheddar", "Mayo Albahaca", "Mayo Cítrica"].map(
               (salsa) => (
                 <span
                   key={salsa}
