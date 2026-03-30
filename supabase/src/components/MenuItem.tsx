@@ -37,12 +37,6 @@ const MenuItem = ({ name, description, price, image, imageSize = 'medium' }: Men
               <img src="/src/assets/logo-circle.png" alt="" className="absolute w-2 h-2 opacity-5 -right-3 top-0" />
             </p>
           )}
-          {name === "La Perversa" && (
-            <p className="text-muted-foreground font-body text-xs sm:text-xs mt-1 tracking-wide uppercase relative">
-              LA HAMBUESUESA QUE TE HACE PERDER EL CONTROL
-              <img src="/src/assets/logo-circle.png" alt="" className="absolute w-2 h-2 opacity-5 -left-3 top-0" />
-            </p>
-          )}
           <p className="menu-item-desc mt-1 text-xs sm:text-sm leading-tight min-h-[36px] flex items-center">{description}</p>
         </div>
         <div className="flex flex-col items-center gap-2 w-full flex-shrink-0">

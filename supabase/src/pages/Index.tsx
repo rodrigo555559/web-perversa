@@ -190,7 +190,7 @@ const Index = () => {
             <div className="h-full"><MenuItem name="Coca-Cola" description="" price="3,00€" image={cocaCola} imageSize="large" /></div>
             <div className="h-full"><MenuItem name="Sprite" description="" price="3,00€" image={sprite} imageSize="large" /></div>
             <div className="h-full"><MenuItem name="Aquarius Limón" description="" price="3,00€" image={aquariusLimon} imageSize="large" /></div>
-            <div className="h-full"><MenuItem name="Aquarius Naranja" description="" price="3,00€" image={aquariusNaranja} imageSize="large" /></div>
+            <div className="h-full"><MenuItem name="Aquarius Naranja" description="" price="3,00€" image={aquariusNaranja} imageSize="medium" /></div>
             <div className="h-full"><MenuItem name="Monster Mangoloco" description="" price="3,00€" image={mangoLoco} imageSize="large" /></div>
             <div className="h-full"><MenuItem name="Fuze Tea" description="" price="3,00€" image={fuzeTea} imageSize="large" /></div>
           </div>

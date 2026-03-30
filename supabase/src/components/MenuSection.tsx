@@ -77,14 +77,6 @@ const MenuSection = ({ id, title, subtitle, children, image, imageAlt, reverse, 
                   <img src={logoSilhouette} alt="" className="absolute w-3 h-3 opacity-10 top-0 right-0" />
                 </p>
               )}
-              {id === 'postres' && (
-                <p className="text-muted-foreground font-body text-xs sm:text-sm mt-2 tracking-wide uppercase relative">
-                  SI LUCAS DICE QUE LAS SUYAS SON <span className="relative inline-block">
-                      C
-                      <img src={siluetaImage} alt="" className="absolute w-4 h-4 opacity-25 -top-3 left-1" style={{transform: 'rotate(10deg)'}} />
-                    </span> ASERAS LAS NUESTRAS TAMBIÉN
-                </p>
-              )}
               <div className="w-12 sm:w-16 h-0.5 bg-primary mt-4 mx-auto" />
               {/* Elementos decorativos */}
               <div className="flex justify-center mt-3 gap-2">
