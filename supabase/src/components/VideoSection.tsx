@@ -7,7 +7,7 @@ interface VideoSectionProps {
 const VideoSection = ({ videoUrl, title, subtitle }: VideoSectionProps) => {
   return (
     <section className="relative py-0">
-      <div className="relative h-[50vh] md:h-[60vh] overflow-hidden">
+      <div className="relative h-[30vh] md:h-[40vh] overflow-hidden">
         <video
           autoPlay
           muted
@@ -17,7 +17,6 @@ const VideoSection = ({ videoUrl, title, subtitle }: VideoSectionProps) => {
         >
           <source src={videoUrl} type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-background/60" />
         {(title || subtitle) && (
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
             {title && (

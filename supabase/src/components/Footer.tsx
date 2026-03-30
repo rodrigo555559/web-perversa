@@ -7,7 +7,7 @@ const Footer = () => {
         <img
           src={logoPerversa}
           alt="La Perversa"
-          className="w-20 h-20 object-contain mx-auto mb-6 opacity-60"
+          className="w-32 h-32 sm:w-40 sm:h-40 object-contain mx-auto mb-6 opacity-80"
         />
         <p className="font-display text-2xl text-primary font-bold mb-2">La Perversa</p>
         <p className="font-body text-xs text-muted-foreground tracking-[0.2em] uppercase">

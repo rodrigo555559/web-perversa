@@ -5,7 +5,6 @@ import MenuItem from "@/components/MenuItem";
 import LeopardDivider from "@/components/LeopardDivider";
 import VideoSection from "@/components/VideoSection";
 import Footer from "@/components/Footer";
-import CartButton from "@/components/CartButton";
 import sidesPhoto from "@/assets/dessert-photo.jpg";
 import dessertPhoto from "@/assets/dessert-photo.jpg";
 import basilicaBurger from "@/assets/basilica-burger.png";
@@ -19,6 +18,10 @@ import mangoLoco from "@/assets/mango-loco.png";
 import fuzeTea from "@/assets/fuze-tea.jpg";
 import estrellaGalicia from "@/assets/estrella-galicia.png";
 import milnueve from "@/assets/milnueve.png";
+import logoPerversa from "@/assets/logo-perversa.png";
+import perversionImage from "@/assets/perversión.jpg";
+import logoSilhouette from "@/assets/logo-circle.png";
+import siluetaImage from "@/assets/silueta.png";
 import basilicaImage from "@/assets/basílica.jpeg";
 import patatasImage from "@/assets/patatas.png";
 import gajoImage from "@/assets/gajo.png";
@@ -83,14 +86,26 @@ const Index = () => {
         />
       </MenuSection>
 
-      <VideoSection
-        videoUrl={burgerVideo}
-        title="Smash It"
-        subtitle="Doble carne, doble sabor"
-      />
+      {/* SMASH BURGERS - IMAGEN */}
+      <section className="py-16 sm:py-20 md:py-28">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <div className="flex justify-center">
+            <img
+              src={perversionImage}
+              alt="Perversión"
+              className="w-full max-w-2xl aspect-square object-cover rounded-lg shadow-lg"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
 
-      {/* SMASH BURGERS */}
-      <MenuSection id="smash" title="Smash Burgers" subtitle="La nueva forma de disfrutar">
+      {/* SMASH BURGERS - CATÁLOGO */}
+      <MenuSection
+        id="smash"
+        title="Smash Burgers"
+        subtitle="DICE EL COCINERO QUE SI ERES GUAPA QUE LE HABLES"
+      >
         <MenuItem
           name="La Perversa"
           description="Doble cheeseburger de queso americano con salsa mayo sweet chilli y cebolla encurtida, bacon crispy."
@@ -114,6 +129,13 @@ const Index = () => {
         />
       </MenuSection>
 
+      {/* SMASH BURGERS - VÍDEO */}
+      <VideoSection
+        videoUrl={burgerVideo}
+        title="Smash It"
+        subtitle="DOBLE DE CARNE, DOBLE DE PERVERSIÓN"
+      />
+
       <LeopardDivider />
 
       {/* EXTRAS */}
@@ -124,7 +146,7 @@ const Index = () => {
       >
         <div className="h-full"><MenuItem name="Patatas Normales" description="Crujientes y doradas." price="2,70€" image={patatasImage} imageSize="large" /></div>
         <div className="h-full"><MenuItem name="Patatas Bacon Cheddar" description="Con bacon crispy y salsa cheddar." price="4,00€" image={cheddarbaconImage} imageSize="large" /></div>
-        <div className="h-full"><MenuItem name="Patatas Gajo" description="Corte rústico, perfectamente especiadas." price="3,00€" image={gajoImage} imageSize="large" /></div>
+        <div className="h-full"><MenuItem name="Patatas Gajo" description="Corte rústico, perfectamente especiadas." price="3,00€" image={gajoImage} imageSize="extra-large" /></div>
         <div className="h-full"><MenuItem name="Croquetas de Jamón" description="8 unidades. Caseras y cremosas." price="7,00€" image={croquetasImage} imageSize="large" /></div>
         <MenuItem
           name="Croquetas Cecina y San Simón"
@@ -132,6 +154,8 @@ const Index = () => {
           price="8,50€"
         />
       </MenuSection>
+
+      <LeopardDivider />
 
       <VideoSection
         videoUrl="https://videos.pexels.com/video-files/3327220/3327220-uhd_2560_1440_24fps.mp4"
@@ -141,10 +165,6 @@ const Index = () => {
       <MenuSection
         id="postres"
         title="Postres"
-        subtitle="El final perfecto"
-        image={dessertPhoto}
-        imageAlt="Cheesecake artesanal"
-        reverse
       >
         <MenuItem
           name="Cheesecake Frutos Rojos"
@@ -209,8 +229,6 @@ const Index = () => {
       <LeopardDivider />
 
       <Footer />
-      
-      <CartButton />
     </div>
   );
 };

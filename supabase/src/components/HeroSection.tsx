@@ -20,7 +20,7 @@ const HeroSection = () => {
         <img
           src={logoCircle}
           alt="La Perversa Logo"
-          className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64 object-contain mx-auto mb-6 sm:mb-8"
+          className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-72 lg:h-72 xl:w-80 xl:h-80 object-contain mx-auto mb-6 sm:mb-8"
         />
         <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-black text-primary tracking-tight">
           La Perversa
@@ -28,6 +28,16 @@ const HeroSection = () => {
         <p className="font-body text-xs sm:text-sm md:text-base text-muted-foreground mt-3 sm:mt-4 tracking-[0.2em] sm:tracking-[0.3em] uppercase">
           Burgers & Smash
         </p>
+        <p className="font-body text-xs sm:text-sm md:text-base text-muted-foreground mt-3 sm:mt-4 tracking-[0.2em] sm:tracking-[0.3em] uppercase">
+          Ayer no fuiste al gimnasio, hoy no fuiste al gimnasio y por qué no, vamos a pedir aquí
+        </p>
+        <div className="mt-4 flex justify-center">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-0.5 bg-primary/40"></div>
+            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+            <div className="w-12 h-0.5 bg-primary/40"></div>
+          </div>
+        </div>
         <div className="mt-8 sm:mt-10">
           <a
             href="#hamburguesas"

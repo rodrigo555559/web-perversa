@@ -6,11 +6,13 @@ interface MenuSectionProps {
   image?: string;
   imageAlt?: string;
   reverse?: boolean;
+  logoSilhouette?: string;
+  siluetaImage?: string;
 }
 
-const MenuSection = ({ id, title, subtitle, children, image, imageAlt, reverse }: MenuSectionProps) => {
+const MenuSection = ({ id, title, subtitle, children, image, imageAlt, reverse, logoSilhouette, siluetaImage }: MenuSectionProps) => {
   return (
-    <section id={id} className="py-16 sm:py-20 md:py-28">
+    <section id={id} className={`${id === 'postres' ? 'pt-2 pb-16 sm:pt-4 sm:pb-20 md:pt-6 md:pb-28' : 'py-16 sm:py-20 md:py-28'}`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {image ? (
           <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-8 lg:gap-16 items-start`}>
@@ -26,7 +28,7 @@ const MenuSection = ({ id, title, subtitle, children, image, imageAlt, reverse }
             </div>
             <div className="lg:w-3/5 w-full">
               <div className="mb-8 sm:mb-10">
-                <h2 className="section-title text-2xl sm:text-3xl md:text-4xl">{title}</h2>
+                <h2 className="section-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl">{title}</h2>
                 {subtitle && (
                   <p className="text-muted-foreground font-body text-xs sm:text-sm mt-3 tracking-wide uppercase">
                     {subtitle}
@@ -40,13 +42,47 @@ const MenuSection = ({ id, title, subtitle, children, image, imageAlt, reverse }
         ) : (
           <>
             <div className="mb-8 sm:mb-10 text-center">
-              <h2 className="section-title text-2xl sm:text-3xl md:text-4xl">{title}</h2>
+              <h2 className="section-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl">{title}</h2>
               {subtitle && (
                 <p className="text-muted-foreground font-body text-xs sm:text-sm mt-3 tracking-wide uppercase">
                   {subtitle}
                 </p>
               )}
+              {id === 'hamburguesas' && (
+                <p className="text-muted-foreground font-body text-xs sm:text-sm mt-2 tracking-wide uppercase relative">
+                  NO SE POR QUÉ TANTA INSISTENCIA CON LO DE BURGERS DE AUTOR, LAS NUESTRAS TAMBIÉN LAS PENSÓ UN TÍO
+                  <img src={logoSilhouette} alt="" className="absolute w-3 h-3 opacity-10 top-0 right-0" />
+                </p>
+              )}
+              {id === 'hamburguesas' && (
+                <p className="text-muted-foreground font-body text-xs sm:text-sm mt-2 tracking-wide uppercase relative">
+                  NO SE POR QUÉ TANTA INSISTENCIA CON LO DE <span className="relative inline-block">
+                      B
+                      <img src={siluetaImage} alt="" className="absolute w-4 h-4 opacity-25 -top-3 left-1" style={{transform: 'rotate(-10deg)'}} />
+                    </span> URGERS DE AUTOR
+                </p>
+              )}
+              {id === 'postres' && (
+                <p className="text-muted-foreground font-body text-xs sm:text-sm mt-2 tracking-wide uppercase relative">
+                  SI LUCAS DICE QUE LAS SUYAS SON CASERAS LAS NUESTRAS TAMBIÉN QUE NOS LAS VENDE EL MISMO
+                  <img src={logoSilhouette} alt="" className="absolute w-3 h-3 opacity-10 top-0 right-0" />
+                </p>
+              )}
+              {id === 'postres' && (
+                <p className="text-muted-foreground font-body text-xs sm:text-sm mt-2 tracking-wide uppercase relative">
+                  SI LUCAS DICE QUE LAS SUYAS SON <span className="relative inline-block">
+                      C
+                      <img src={siluetaImage} alt="" className="absolute w-4 h-4 opacity-25 -top-3 left-1" style={{transform: 'rotate(10deg)'}} />
+                    </span> ASERAS LAS NUESTRAS TAMBIÉN
+                </p>
+              )}
               <div className="w-12 sm:w-16 h-0.5 bg-primary mt-4 mx-auto" />
+              {/* Elementos decorativos */}
+              <div className="flex justify-center mt-3 gap-2">
+                <div className="w-1 h-1 bg-primary/30 rounded-full"></div>
+                <div className="w-1 h-1 bg-primary/50 rounded-full"></div>
+                <div className="w-1 h-1 bg-primary/30 rounded-full"></div>
+              </div>
             </div>
             <div className="max-w-2xl mx-auto px-2 sm:px-0">{children}</div>
           </>

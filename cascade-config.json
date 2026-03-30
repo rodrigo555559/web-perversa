@@ -1,0 +1,66 @@
+{
+  "name": "La Perversa - Burger & Smash",
+  "description": "Web de hamburguesería irreverente con diseño moderno y personalidad única",
+  "type": "restaurant-website",
+  "framework": "React + Vite + TypeScript",
+  "styling": "TailwindCSS",
+  "features": [
+    "Responsive design",
+    "Hero section con video",
+    "Menú interactivo",
+    "Imágenes optimizadas",
+    "Textos humorísticos",
+    "Diseño con LeopardDivider",
+    "Secciones de Smash Burgers",
+    "Catálogo de productos"
+  ],
+  "structure": {
+    "hero": "Logo grande + texto motivacional",
+    "hamburguesas": "Hamburguesas clásicas con imágenes",
+    "smash": "Imagen perversión + catálogo + video",
+    "extras": "Para picar",
+    "postres": "Centrados sin imagen",
+    "bebidas": "Refrescos y cervezas",
+    "footer": "Logo La Perversa destacado"
+  },
+  "assets": [
+    "logo-circle.png",
+    "logo-perversa.png", 
+    "perversión.jpg",
+    "la-cabra-burger.jpg",
+    "basílica.jpeg",
+    "la-perversa.jpeg",
+    "ay-caramba.jpeg",
+    "porquina-burger.png",
+    "patatas.png",
+    "gajo.png",
+    "gajo-cheddar.png",
+    "croquetas.png",
+    "cheddarbacon.png",
+    "coca-cola.png",
+    "sprite.png",
+    "acuarius-naranja.png",
+    "mango-loco.png",
+    "fuze-tea.jpg",
+    "estrella-galicia.png",
+    "milnueve.png",
+    "burger-video.mp4",
+    "leopard-pattern.jpg"
+  ],
+  "personality": {
+    "tone": "Irreverente, humorístico, provocador",
+    "style": "Moderno con toques atrevidos",
+    "colors": "Primarios con neutros",
+    "typography": "Display para títulos, body para texto"
+  },
+  "commands": {
+    "dev": "cd supabase && npm run dev",
+    "build": "cd supabase && npm run build",
+    "preview": "cd supabase && npm run preview"
+  },
+  "deployment": {
+    "port": 8080,
+    "build_output": "supabase/dist",
+    "preview_available": true
+  }
+}
