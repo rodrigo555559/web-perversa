@@ -66,6 +66,14 @@ const MenuSection = ({ id, title, subtitle, children, image, imageAlt, reverse, 
                 </p>
               )}
               {id === 'hamburguesas' && (
+                <>
+                  <p className="text-primary font-display text-lg sm:text-xl tracking-wider mb-2">OFERTA</p>
+                  <p className="text-muted-foreground font-body text-[10px] sm:text-xs mt-1 tracking-wide uppercase">
+                    POSTRES A 2,5€ hasta fin de existencias
+                  </p>
+                </>
+              )}
+              {id === 'hamburguesas' && (
                 <p className="text-muted-foreground font-body text-xs sm:text-sm mt-2 tracking-wide uppercase relative">
                   NO SE POR QUÉ TANTA INSISTENCIA CON LO DE BURGERS DE AUTOR, LAS NUESTRAS TAMBIÉN LAS PENSÓ UN TÍO
                   <img src={logoSilhouette} alt="" className="absolute w-3 h-3 opacity-10 top-0 right-0" />

@@ -4,14 +4,16 @@ interface MenuItemProps {
   price: string;
   image?: string;
   imageSize?: 'small' | 'medium' | 'large' | 'extra-large';
+  style?: React.CSSProperties;
+  priceOld?: string;
 }
 
-const MenuItem = ({ name, description, price, image, imageSize = 'medium' }: MenuItemProps) => {
+const MenuItem = ({ name, description, price, image, imageSize = 'medium', style, priceOld }: MenuItemProps) => {
   return (
     <div className="group py-6 border-b border-border/50 last:border-b-0 h-full flex flex-col">
       <div className="flex flex-col items-center gap-3 flex-1 min-h-[80px]">
         {image && (
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0" style={style}>
             <img
               src={image}
               alt={name}
@@ -40,7 +42,12 @@ const MenuItem = ({ name, description, price, image, imageSize = 'medium' }: Men
           <p className="menu-item-desc mt-1 text-xs sm:text-sm leading-tight min-h-[36px] flex items-center">{description}</p>
         </div>
         <div className="flex flex-col items-center gap-2 w-full flex-shrink-0">
-          <span className="menu-item-price whitespace-nowrap text-base sm:text-base font-semibold">{price}</span>
+          <div className="flex items-center gap-2">
+            {priceOld && (
+              <span className="menu-item-price whitespace-nowrap text-base sm:text-base text-muted-foreground line-through">{priceOld}</span>
+            )}
+            <span className="menu-item-price whitespace-nowrap text-base sm:text-base font-semibold text-primary">{price}</span>
+          </div>
           {/* Elemento decorativo */}
           <div className="flex justify-center mt-1">
             <div className="w-8 h-0.5 bg-primary/20 rounded-full"></div>

@@ -20,7 +20,7 @@ import fuzeTea from "@/assets/fuze-tea.jpg";
 import estrellaGalicia from "@/assets/estrella-galicia.png";
 import milnueve from "@/assets/milnueve.png";
 import logoPerversa from "@/assets/logo-perversa.png";
-import perversionImage from "@/assets/perversión.jpg";
+import perversionImage from "@/assets/perversion.jpg";
 import logoSilhouette from "@/assets/logo-circle.png";
 import siluetaImage from "@/assets/silueta.png";
 import basilicaImage from "@/assets/basílica.jpeg";
@@ -29,7 +29,6 @@ import gajoImage from "@/assets/gajo.png";
 import gajoCheddarImage from "@/assets/gajo-cheddar.png";
 import baconCheddarImage from "@/assets/bacon-cheddar.png";
 import laPerversaImage from "@/assets/la-perversa.jpeg";
-import ayCarambaImage from "@/assets/ay-caramba.jpeg";
 import croquetasImage from "@/assets/croquetas.png";
 import cheddarbaconImage from "@/assets/cheddarbacon.png";
 
@@ -54,7 +53,7 @@ const Index = () => {
       <MenuSection
         id="hamburguesas"
         title="Hamburguesas"
-        subtitle="Panes: Brioche y rústica (+0,50€)"
+        subtitle="Panes: Brioche"
         siluetaImage={siluetaImage}
       >
         <MenuItem
@@ -73,18 +72,6 @@ const Index = () => {
           name="Gallega"
           description="Carne de ternera premium, queso de tetilla/arzúa pimentonado, pan rústico y pimiento verde, brotes/rúcula, salsa garlic."
           price="12,00€"
-        />
-        <MenuItem
-          name="Ay Caramba"
-          description="Carne, queso cheddar, guacamole, pico de Gallo, lechuga, salsa chipotle, jalapeños."
-          price="9,99€"
-          image={ayCarambaImage}
-          imageSize="large"
-        />
-        <MenuItem
-          name="Pollo Crujiente"
-          description="Pollo rebozado en cornflakes, tomate, salsa cheddar y tira de bacon, cebolla encurtida."
-          price="9,99€"
         />
       </MenuSection>
 
@@ -149,7 +136,7 @@ const Index = () => {
       >
         <p className="text-muted-foreground font-body text-xs sm:text-sm mb-4 tracking-wide uppercase text-center">No hagas tratos con alguien que no pide patatas</p>
         <div className="h-full"><MenuItem name="Patatas Normales" description="Crujientes y doradas." price="2,70€" image={patatasImage} imageSize="large" /></div>
-        <div className="h-full"><MenuItem name="Patatas Bacon Cheddar" description="Con bacon crispy y salsa cheddar." price="4,00€" image={cheddarbaconImage} imageSize="large" /></div>
+        <div className="h-full"><MenuItem name="Patatas Bacon Cheddar" description="Con bacon crispy y salsa cheddar." price="4,00€" image={cheddarbaconImage} imageSize="large" style={{marginLeft: '1.5cm'}} /></div>
         <div className="h-full"><MenuItem name="Patatas Gajo" description="Corte rústico, perfectamente especiadas." price="3,00€" image={gajoImage} imageSize="extra-large" /></div>
         <div className="h-full"><MenuItem name="Croquetas de Jamón" description="8 unidades. Caseras y cremosas." price="7,00€" image={croquetasImage} imageSize="large" /></div>
         <MenuItem
@@ -173,10 +160,11 @@ const Index = () => {
         <MenuItem
           name="Cheesecake Frutos Rojos"
           description="Con mermelada de frutos rojos casera."
-          price="5,50€"
+          price="2,50€"
+          priceOld="5,50€"
         />
-        <MenuItem name="Cheesecake Oreo" description="Cremosa base con galleta Oreo." price="5,00€" />
-        <MenuItem name="Cheesecake Lotus" description="Con crema de galleta Lotus." price="5,00€" />
+        <MenuItem name="Cheesecake Oreo" description="Cremosa base con galleta Oreo." price="2,50€" priceOld="5,00€" />
+        <MenuItem name="Cheesecake Lotus" description="Con crema de galleta Lotus." price="2,50€" priceOld="5,00€" />
       </MenuSection>
 
       <LeopardDivider />
@@ -193,15 +181,6 @@ const Index = () => {
             <div className="h-full"><MenuItem name="Aquarius Naranja" description="" price="3,00€" image={aquariusNaranja} imageSize="medium" /></div>
             <div className="h-full"><MenuItem name="Monster Mangoloco" description="" price="3,00€" image={mangoLoco} imageSize="large" /></div>
             <div className="h-full"><MenuItem name="Fuze Tea" description="" price="3,00€" image={fuzeTea} imageSize="large" /></div>
-          </div>
-        </div>
-        
-        {/* Cervezas */}
-        <div>
-          <h3 className="font-display text-2xl text-primary mb-6 font-semibold text-center">Cervezas</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
-            <div className="h-full"><MenuItem name="Estrella" description="" price="3,50€" image={estrellaGalicia} imageSize="large" /></div>
-            <div className="h-full"><MenuItem name="1906" description="" price="3,50€" image={milnueve} imageSize="large" /></div>
           </div>
         </div>
         <p className="text-muted-foreground font-body text-xs sm:text-sm mt-6 tracking-wide uppercase text-center">El 99% de nuestros clientes afirma que sin bebida nuestra comida se les hace bola</p>

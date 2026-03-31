@@ -46,6 +46,14 @@ const HeroSection = () => {
             Ver Carta
           </a>
         </div>
+        <div className="mt-6 sm:mt-8">
+          <p className="font-display text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-primary tracking-wide">
+            PIDE LLAMANDO AL
+          </p>
+          <p className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-primary tracking-tight mt-2">
+            +34 681 82 29 81
+          </p>
+        </div>
       </div>
 
       {/* Scroll indicator */}
