@@ -68,11 +68,12 @@ const Index = () => {
           description="Carne, cheddar, lechuga, tomate, cebolla, mayonesa."
           price="8,00€"
         />
-        <MenuItem
-          name="Gallega"
-          description="Carne de ternera premium, queso de tetilla/arzúa pimentonado, pan rústico y pimiento verde, brotes/rúcula, salsa garlic."
-          price="12,00€"
-        />
+        <div className="text-primary font-display text-lg sm:text-xl md:text-2xl tracking-wider text-center mt-8 font-bold">
+          <p>PRÓXIMAMENTE:</p>
+          <p className="mt-2">La Gallega</p>
+          <p className="mt-1">La Ay Caramba</p>
+          <p className="mt-1">La Golden burger de pollo</p>
+        </div>
       </MenuSection>
 
       {/* SMASH BURGERS - IMAGEN */}
@@ -144,13 +145,14 @@ const Index = () => {
           description="8 unidades. Cecina y queso San Simón ahumado."
           price="8,50€"
         />
+        <div className="text-primary font-display text-lg sm:text-xl tracking-wider text-center mt-6 font-bold">
+          <p>PRÓXIMAMENTE:</p>
+          <p className="mt-2">Delicias de pollo</p>
+          <p className="mt-1">Alitas</p>
+        </div>
       </MenuSection>
 
       <LeopardDivider />
-
-      <VideoSection
-        videoUrl="https://videos.pexels.com/video-files/3327220/3327220-uhd_2560_1440_24fps.mp4"
-      />
 
       {/* POSTRES */}
       <MenuSection
@@ -159,11 +161,11 @@ const Index = () => {
       >
         <MenuItem
           name="Cheesecake Frutos Rojos"
-          description="Con mermelada de frutos rojos casera."
+          description="Con mermelada de frutos rojos."
           price="2,50€"
           priceOld="5,50€"
         />
-        <MenuItem name="Cheesecake Oreo" description="Cremosa base con galleta Oreo." price="2,50€" priceOld="5,00€" />
+        <MenuItem name="Cheesecake Oreo" description="Cremosa con galleta Oreo y crema de nutella." price="2,50€" priceOld="5,00€" />
         <MenuItem name="Cheesecake Lotus" description="Con crema de galleta Lotus." price="2,50€" priceOld="5,00€" />
       </MenuSection>
 
