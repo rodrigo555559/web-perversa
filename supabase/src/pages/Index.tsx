@@ -5,9 +5,6 @@ import MenuItem from "@/components/MenuItem";
 import LeopardDivider from "@/components/LeopardDivider";
 import VideoSection from "@/components/VideoSection";
 import Footer from "@/components/Footer";
-import sidesPhoto from "@/assets/dessert-photo.jpg";
-import dessertPhoto from "@/assets/dessert-photo.jpg";
-import basilicaBurger from "@/assets/basilica-burger.png";
 import porquinaBurger from "@/assets/porquina-burger.png";
 import laCabraBurger from "@/assets/la-cabra-burger.jpg";
 import burgerVideo from "@/assets/burger-video.mp4";
@@ -17,20 +14,18 @@ import aquariusNaranja from "@/assets/aquarius-naranja.png";
 import aquariusLimon from "@/assets/aquarius.png";
 import mangoLoco from "@/assets/mango-loco.png";
 import fuzeTea from "@/assets/fuze-tea.jpg";
-import estrellaGalicia from "@/assets/estrella-galicia.png";
-import milnueve from "@/assets/milnueve.png";
+import fuzeTeaLimon from "@/assets/fuze-tea.png";
+import fantaNaranja from "@/assets/fantanaranja.png";
+import fantaLimon from "@/assets/fanta-limon.png";
 import logoPerversa from "@/assets/logo-perversa.png";
 import perversionImage from "@/assets/perversion.jpg";
 import logoSilhouette from "@/assets/logo-circle.png";
 import siluetaImage from "@/assets/silueta.png";
-import basilicaImage from "@/assets/basílica.jpeg";
 import patatasImage from "@/assets/patatas.png";
 import gajoImage from "@/assets/gajo.png";
-import gajoCheddarImage from "@/assets/gajo-cheddar.png";
-import baconCheddarImage from "@/assets/bacon-cheddar.png";
-import laPerversaImage from "@/assets/la-perversa.jpeg";
-import croquetasImage from "@/assets/croquetas.png";
 import cheddarbaconImage from "@/assets/cheddarbacon.png";
+import croquetasImage from "@/assets/croquetas.png";
+import laPerversaImage from "@/assets/la-perversa.jpeg";
 
 const sections = [
   { id: "hamburguesas", label: "Hamburguesas" },
@@ -105,13 +100,6 @@ const Index = () => {
           imageSize="large"
         />
         <MenuItem
-          name="Basílica"
-          description="Doble smash, tomate seco, mayo con albahaca, brotes, cebolla, queso emmental."
-          price="9,99€"
-          image={basilicaImage}
-          imageSize="large"
-        />
-        <MenuItem
           name="Porkiña"
           description="Doble de carne, salsa bacon ahumado y cheddar, cebolla caramelizada, tira de bacon, queso americano."
           price="9,99€"
@@ -183,6 +171,9 @@ const Index = () => {
             <div className="h-full"><MenuItem name="Aquarius Naranja" description="" price="3,00€" image={aquariusNaranja} imageSize="medium" /></div>
             <div className="h-full"><MenuItem name="Monster Mangoloco" description="" price="3,00€" image={mangoLoco} imageSize="large" /></div>
             <div className="h-full"><MenuItem name="Fuze Tea" description="" price="3,00€" image={fuzeTea} imageSize="large" /></div>
+            <div className="h-full"><MenuItem name="Fuze Tea Limón" description="" price="3,00€" image={fuzeTeaLimon} imageSize="large" /></div>
+            <div className="h-full"><MenuItem name="Fanta Naranja" description="" price="3,00€" image={fantaNaranja} imageSize="large" /></div>
+            <div className="h-full"><MenuItem name="Fanta Limón" description="" price="3,00€" image={fantaLimon} imageSize="large" /></div>
           </div>
         </div>
         <p className="text-muted-foreground font-body text-xs sm:text-sm mt-6 tracking-wide uppercase text-center">El 99% de nuestros clientes afirma que sin bebida nuestra comida se les hace bola</p>
