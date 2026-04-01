@@ -30,7 +30,7 @@ const MenuItem = ({ name, description, price, image, imageSize = 'medium', style
           </div>
         )}
         <div className="flex-1 flex flex-col justify-center items-center text-center min-h-[80px]">
-          <h3 className="menu-item-name group-hover:text-primary transition-colors duration-300 text-base sm:text-base leading-tight min-h-[24px] flex items-center">
+          <h3 className="menu-item-name group-hover:text-primary transition-colors duration-300 text-lg sm:text-xl md:text-2xl leading-tight min-h-[24px] flex items-center font-semibold">
             {name}
           </h3>
           {name === "Patatas Gajo" && (

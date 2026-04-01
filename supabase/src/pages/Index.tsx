@@ -5,6 +5,9 @@ import MenuItem from "@/components/MenuItem";
 import LeopardDivider from "@/components/LeopardDivider";
 import VideoSection from "@/components/VideoSection";
 import Footer from "@/components/Footer";
+import sidesPhoto from "@/assets/dessert-photo.jpg";
+import dessertPhoto from "@/assets/dessert-photo.jpg";
+import basilicaBurger from "@/assets/basilica-burger.png";
 import porquinaBurger from "@/assets/porquina-burger.png";
 import laCabraBurger from "@/assets/la-cabra-burger.jpg";
 import burgerVideo from "@/assets/burger-video.mp4";
@@ -14,18 +17,20 @@ import aquariusNaranja from "@/assets/aquarius-naranja.png";
 import aquariusLimon from "@/assets/aquarius.png";
 import mangoLoco from "@/assets/mango-loco.png";
 import fuzeTea from "@/assets/fuze-tea.jpg";
-import fuzeTeaLimon from "@/assets/fuze-tea.png";
-import fantaNaranja from "@/assets/fantanaranja.png";
-import fantaLimon from "@/assets/fanta-limon.png";
+import estrellaGalicia from "@/assets/estrella-galicia.png";
+import milnueve from "@/assets/milnueve.png";
 import logoPerversa from "@/assets/logo-perversa.png";
 import perversionImage from "@/assets/perversion.jpg";
 import logoSilhouette from "@/assets/logo-circle.png";
 import siluetaImage from "@/assets/silueta.png";
+import basilicaImage from "@/assets/basílica.jpeg";
 import patatasImage from "@/assets/patatas.png";
 import gajoImage from "@/assets/gajo.png";
-import cheddarbaconImage from "@/assets/cheddarbacon.png";
-import croquetasImage from "@/assets/croquetas.png";
+import gajoCheddarImage from "@/assets/gajo-cheddar.png";
+import baconCheddarImage from "@/assets/bacon-cheddar.png";
 import laPerversaImage from "@/assets/la-perversa.jpeg";
+import croquetasImage from "@/assets/croquetas.png";
+import cheddarbaconImage from "@/assets/cheddarbacon.png";
 
 const sections = [
   { id: "hamburguesas", label: "Hamburguesas" },
@@ -60,15 +65,27 @@ const Index = () => {
         />
         <MenuItem
           name="Heterobásica"
-          description="Carne, cheddar, lechuga, tomate, cebolla, mayonesa."
+          description="Carne o pollo, cheddar, lechuga, tomate, cebolla, mayonesa."
           price="8,00€"
         />
-        <div className="text-primary font-display text-lg sm:text-xl md:text-2xl tracking-wider text-center mt-8 font-bold">
-          <p>PRÓXIMAMENTE:</p>
-          <p className="mt-2">La Gallega</p>
-          <p className="mt-1">La Ay Caramba</p>
-          <p className="mt-1">La Golden burger de pollo</p>
-        </div>
+        <MenuItem
+          name="Golden de Pollo"
+          description="Hamburguesa de pollo, queso americano, cebolla caramelizada, tira de bacon y salsa cheddar."
+          price="9,90€"
+        />
+        <p className="text-primary font-display text-lg sm:text-xl md:text-2xl tracking-wider text-center mt-8 font-bold">
+          PRÓXIMAMENTE:
+        </p>
+        <MenuItem
+          name="La Gallega"
+          description="Carne de ternera premium, queso de tetilla/arzúa pimentonado, pan rústico y pimiento verde, brotes/rúcula, salsa garlic."
+          price="12,00€"
+        />
+        <MenuItem
+          name="La Ay Caramba"
+          description="Carne, queso cheddar, guacamole, pico de Gallo, lechuga, salsa chipotle, jalapeños."
+          price="9,99€"
+        />
       </MenuSection>
 
       {/* SMASH BURGERS - IMAGEN */}
@@ -97,6 +114,13 @@ const Index = () => {
           description="Doble cheeseburger de queso americano con salsa mayo sweet chilli y cebolla encurtida, bacon crispy."
           price="9,99€"
           image={laPerversaImage}
+          imageSize="large"
+        />
+        <MenuItem
+          name="Basílica"
+          description="Doble smash, tomate seco, mayo con albahaca, brotes, cebolla, queso emmental."
+          price="9,99€"
+          image={basilicaImage}
           imageSize="large"
         />
         <MenuItem
@@ -133,11 +157,6 @@ const Index = () => {
           description="8 unidades. Cecina y queso San Simón ahumado."
           price="8,50€"
         />
-        <div className="text-primary font-display text-lg sm:text-xl tracking-wider text-center mt-6 font-bold">
-          <p>PRÓXIMAMENTE:</p>
-          <p className="mt-2">Delicias de pollo</p>
-          <p className="mt-1">Alitas</p>
-        </div>
       </MenuSection>
 
       <LeopardDivider />
@@ -149,11 +168,11 @@ const Index = () => {
       >
         <MenuItem
           name="Cheesecake Frutos Rojos"
-          description="Con mermelada de frutos rojos."
+          description="Con mermelada de frutos rojos casera."
           price="2,50€"
           priceOld="5,50€"
         />
-        <MenuItem name="Cheesecake Oreo" description="Cremosa con galleta Oreo y crema de nutella." price="2,50€" priceOld="5,00€" />
+        <MenuItem name="Cheesecake Oreo" description="Cremosa base con galleta Oreo." price="2,50€" priceOld="5,00€" />
         <MenuItem name="Cheesecake Lotus" description="Con crema de galleta Lotus." price="2,50€" priceOld="5,00€" />
       </MenuSection>
 
@@ -171,9 +190,6 @@ const Index = () => {
             <div className="h-full"><MenuItem name="Aquarius Naranja" description="" price="3,00€" image={aquariusNaranja} imageSize="medium" /></div>
             <div className="h-full"><MenuItem name="Monster Mangoloco" description="" price="3,00€" image={mangoLoco} imageSize="large" /></div>
             <div className="h-full"><MenuItem name="Fuze Tea" description="" price="3,00€" image={fuzeTea} imageSize="large" /></div>
-            <div className="h-full"><MenuItem name="Fuze Tea Limón" description="" price="3,00€" image={fuzeTeaLimon} imageSize="large" /></div>
-            <div className="h-full"><MenuItem name="Fanta Naranja" description="" price="3,00€" image={fantaNaranja} imageSize="large" /></div>
-            <div className="h-full"><MenuItem name="Fanta Limón" description="" price="3,00€" image={fantaLimon} imageSize="large" /></div>
           </div>
         </div>
         <p className="text-muted-foreground font-body text-xs sm:text-sm mt-6 tracking-wide uppercase text-center">El 99% de nuestros clientes afirma que sin bebida nuestra comida se les hace bola</p>
