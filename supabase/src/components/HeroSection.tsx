@@ -16,7 +16,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 sm:px-6 animate-fade-in-up">
+      <div className="relative z-10 text-center px-4 sm:px-6 animate-fade-in-up pb-24 sm:pb-32">
         <img
           src={logoCircle}
           alt="La Perversa Logo"
@@ -57,11 +57,11 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+      <div className="absolute bottom-12 sm:bottom-16 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
         <span className="font-body text-[8px] sm:text-[10px] uppercase tracking-[0.2em] sm:tracking-[0.3em] text-muted-foreground">
           Scroll
         </span>
-        <div className="w-px h-6 sm:h-8 bg-muted-foreground/40 animate-pulse" />
+        <div className="w-px h-8 sm:h-10 bg-muted-foreground/40 animate-pulse" />
       </div>
     </section>
   );

@@ -29,6 +29,7 @@ import gajoImage from "@/assets/gajo.png";
 import gajoCheddarImage from "@/assets/gajo-cheddar.png";
 import baconCheddarImage from "@/assets/bacon-cheddar.png";
 import laPerversaImage from "@/assets/la-perversa.jpeg";
+import goldenImage from "@/assets/golden.jpg";
 import croquetasImage from "@/assets/croquetas.png";
 import cheddarbaconImage from "@/assets/cheddarbacon.png";
 
@@ -72,6 +73,8 @@ const Index = () => {
           name="Golden de Pollo"
           description="Hamburguesa de pollo, queso americano, cebolla caramelizada, tira de bacon y salsa cheddar."
           price="9,90€"
+          image={goldenImage}
+          imageSize="large"
         />
         <p className="text-primary font-display text-lg sm:text-xl md:text-2xl tracking-wider text-center mt-8 font-bold">
           PRÓXIMAMENTE:
