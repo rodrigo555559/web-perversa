@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import sidesPhoto from "@/assets/dessert-photo.jpg";
 import dessertPhoto from "@/assets/dessert-photo.jpg";
 import basilicaBurger from "@/assets/basilica-burger.png";
-import porquinaBurger from "@/assets/porquina-burger.png";
+import porquinaBurger from "@/assets/porkina.png";
 import laCabraBurger from "@/assets/la-cabra-burger.jpg";
 import burgerVideo from "@/assets/burger-video.mp4";
 import cocaCola from "@/assets/coca-cola.png";
@@ -28,7 +28,8 @@ import patatasImage from "@/assets/patatas.png";
 import gajoImage from "@/assets/gajo.png";
 import gajoCheddarImage from "@/assets/gajo-cheddar.png";
 import baconCheddarImage from "@/assets/bacon-cheddar.png";
-import laPerversaImage from "@/assets/la-perversa.jpeg";
+import laPerversaImage from "@/assets/laperversa.png";
+import heterobasicaImage from "@/assets/heterobasica.jpg";
 import goldenImage from "@/assets/golden.jpg";
 import croquetasImage from "@/assets/croquetas.png";
 import cheddarbaconImage from "@/assets/cheddarbacon.png";
@@ -68,6 +69,8 @@ const Index = () => {
           name="Heterobásica"
           description="Carne o pollo, cheddar, lechuga, tomate, cebolla, mayonesa."
           price="8,00€"
+          image={heterobasicaImage}
+          imageSize="large"
         />
         <MenuItem
           name="Golden de Pollo"
