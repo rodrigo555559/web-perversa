@@ -193,15 +193,15 @@ const Index = () => {
         <div className="mb-12">
           <h3 className="font-display text-2xl text-primary mb-6 font-semibold text-center">Refrescos</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
-            <div className="h-full"><MenuItem name="Coca-Cola" description="" price="3,00€" image={cocaCola} imageSize="large" /></div>
-            <div className="h-full"><MenuItem name="Sprite" description="" price="3,00€" image={sprite} imageSize="large" /></div>
-            <div className="h-full"><MenuItem name="Aquarius Limón" description="" price="3,00€" image={aquariusLimon} imageSize="large" /></div>
-            <div className="h-full"><MenuItem name="Aquarius Naranja" description="" price="3,00€" image={aquariusNaranja} imageSize="medium" /></div>
-            <div className="h-full"><MenuItem name="mangoloco 25cl" description="" price="3,00€" image={mangoLoco} imageSize="large" style={{marginTop: '-2cm'}} /></div>
-            <div className="h-full"><MenuItem name="monster 25cl" description="" price="3,00€" image={monster} imageSize="medium" /></div>
-            <div className="h-full"><MenuItem name="Fanta Limón" description="" price="3,00€" image={fantaLimon} imageSize="large" /></div>
-            <div className="h-full"><MenuItem name="Fanta Naranja" description="" price="3,00€" image={fantaNaranja} imageSize="large" /></div>
-            <div className="h-full"><MenuItem name="Fuze Tea" description="" price="3,00€" image={fuzeTea} imageSize="large" /></div>
+            <div className="h-full"><MenuItem name="Coca-Cola" description="" price="2,9€" image={cocaCola} imageSize="large" /></div>
+            <div className="h-full"><MenuItem name="Sprite" description="" price="2,9€" image={sprite} imageSize="large" /></div>
+            <div className="h-full"><MenuItem name="Aquarius Limón" description="" price="2,9€" image={aquariusLimon} imageSize="large" /></div>
+            <div className="h-full"><MenuItem name="Aquarius Naranja" description="" price="2,9€" image={aquariusNaranja} imageSize="medium" /></div>
+            <div className="h-full"><MenuItem name="mangoloco 25cl" description="" price="2,9€" image={mangoLoco} imageSize="large" style={{marginTop: '-2cm'}} /></div>
+            <div className="h-full"><MenuItem name="monster 25cl" description="" price="2,9€" image={monster} imageSize="medium" /></div>
+            <div className="h-full"><MenuItem name="Fanta Limón" description="" price="2,9€" image={fantaLimon} imageSize="large" /></div>
+            <div className="h-full"><MenuItem name="Fanta Naranja" description="" price="2,9€" image={fantaNaranja} imageSize="large" /></div>
+            <div className="h-full"><MenuItem name="Fuze Tea" description="" price="2,9€" image={fuzeTea} imageSize="large" /></div>
           </div>
         </div>
         <p className="text-muted-foreground font-body text-xs sm:text-sm mt-6 tracking-wide uppercase text-center">El 99% de nuestros clientes afirma que sin bebida nuestra comida se les hace bola</p>
