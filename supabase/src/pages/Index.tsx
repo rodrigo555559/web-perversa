@@ -17,6 +17,9 @@ import aquariusNaranja from "@/assets/aquarius-naranja.png";
 import aquariusLimon from "@/assets/aquarius.png";
 import mangoLoco from "@/assets/mango-loco.png";
 import fuzeTea from "@/assets/fuze-tea.jpg";
+import monster from "@/assets/monster.png";
+import fantaLimon from "@/assets/fanta-limon.png";
+import fantaNaranja from "@/assets/fantanaranja.png";
 import estrellaGalicia from "@/assets/estrella-galicia.png";
 import milnueve from "@/assets/milnueve.png";
 import logoPerversa from "@/assets/logo-perversa.png";
@@ -117,7 +120,7 @@ const Index = () => {
       >
         <MenuItem
           name="La Perversa"
-          description="Doble cheeseburger de queso americano con salsa mayo sweet chilli y cebolla encurtida, bacon crispy."
+          description="Doble smash, queso americano, cebolla caramelizada, bacon, salsa perversa."
           price="9,99€"
           image={laPerversaImage}
           imageSize="large"
@@ -131,7 +134,7 @@ const Index = () => {
         />
         <MenuItem
           name="Porkiña"
-          description="Doble de carne, salsa bacon ahumado y cheddar, cebolla caramelizada, tira de bacon, queso americano."
+          description="Doble smash, doble queso americano, cebolla encurtida, tira de bacon, salsa cheddar y mayonesa sweet chilli."
           price="9,99€"
           image={porquinaBurger}
           imageSize="large"
@@ -194,7 +197,10 @@ const Index = () => {
             <div className="h-full"><MenuItem name="Sprite" description="" price="3,00€" image={sprite} imageSize="large" /></div>
             <div className="h-full"><MenuItem name="Aquarius Limón" description="" price="3,00€" image={aquariusLimon} imageSize="large" /></div>
             <div className="h-full"><MenuItem name="Aquarius Naranja" description="" price="3,00€" image={aquariusNaranja} imageSize="medium" /></div>
-            <div className="h-full"><MenuItem name="Monster Mangoloco" description="" price="3,00€" image={mangoLoco} imageSize="large" /></div>
+            <div className="h-full"><MenuItem name="mangoloco 25cl" description="" price="3,00€" image={mangoLoco} imageSize="large" style={{marginTop: '-2cm'}} /></div>
+            <div className="h-full"><MenuItem name="monster 25cl" description="" price="3,00€" image={monster} imageSize="medium" /></div>
+            <div className="h-full"><MenuItem name="Fanta Limón" description="" price="3,00€" image={fantaLimon} imageSize="large" /></div>
+            <div className="h-full"><MenuItem name="Fanta Naranja" description="" price="3,00€" image={fantaNaranja} imageSize="large" /></div>
             <div className="h-full"><MenuItem name="Fuze Tea" description="" price="3,00€" image={fuzeTea} imageSize="large" /></div>
           </div>
         </div>
