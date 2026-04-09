@@ -95,7 +95,7 @@ const Index = () => {
         />
         <MenuItem
           name="Golden de Pollo"
-          description="Hamburguesa de pollo, queso americano, cebolla caramelizada, tira de bacon y salsa cheddar."
+          description="Pollo, tomate, cebolla blanca, cheddar, bacon crispy y mayonesa."
           price="9,90€"
           image={goldenImage}
           imageSize="large"
