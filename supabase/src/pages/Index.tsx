@@ -36,6 +36,7 @@ import heterobasicaImage from "@/assets/heterobasica.jpg";
 import goldenImage from "@/assets/golden.jpg";
 import croquetasImage from "@/assets/croquetas.png";
 import cheddarbaconImage from "@/assets/cheddarbacon.png";
+import comboVetImage from "@/assets/COMBO VET (2).jpg";
 
 const sections = [
   { id: "hamburguesas", label: "Hamburguesas" },
@@ -51,6 +52,23 @@ const Index = () => {
       <NavBar sections={sections} />
 
       <HeroSection />
+
+      {/* MENU VET */}
+      <section className="py-16 sm:py-20 md:py-28 bg-gradient-to-b from-background to-secondary">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+          <h1 className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-primary font-black mb-8 tracking-wider">
+            MENU VET
+          </h1>
+          <div className="flex justify-center mb-8">
+            <img
+              src={comboVetImage}
+              alt="COMBO VET"
+              className="w-full max-w-4xl h-auto object-contain rounded-lg shadow-2xl"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
 
       <LeopardDivider />
 
@@ -178,11 +196,10 @@ const Index = () => {
         <MenuItem
           name="Cheesecake Frutos Rojos"
           description="Con mermelada de frutos rojos casera."
-          price="2,50€"
-          priceOld="5,50€"
+          price="5,00€"
         />
-        <MenuItem name="Cheesecake Oreo" description="Cremosa base con galleta Oreo." price="2,50€" priceOld="5,00€" />
-        <MenuItem name="Cheesecake Lotus" description="Con crema de galleta Lotus." price="2,50€" priceOld="5,00€" />
+        <MenuItem name="Cheesecake Oreo" description="Cremosa base con galleta Oreo." price="5,00€" />
+        <MenuItem name="Cheesecake Lotus" description="Con crema de galleta Lotus." price="5,00€" />
       </MenuSection>
 
       <LeopardDivider />
